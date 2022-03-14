@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <title>Algoritm Lee</title>
+  </head>
+  <body>
+    <div class="full-width-wrapper">
+      <div class="settings">
+        <h1>Simulare Algoritm Lee</h1>
+        <h3 class="title-description">Simularea iesirii din labirint</h3>
+        <div class="legenda">
+          <p>S - punctul de start</p>
+          <p>F - punctul de final</p>
+          <p>Patrat albastru deschis - drum liber</p>
+          <p>Patrat rosu - drum ocupat/zid</p>
+          <p>Patrat maro - drum deja parcurs (cifra din interior = distanta fata de S)</p>  
+        </div>
+        <div class="start-settings">
+          <span>Start-X: </span>
+          <input class="start-X-input" type="text" />
+          <span>Start-Y: </span>
+          <input class="start-Y-input" type="text" />
+          <button class="setStart">
+            <i class="fas fa-check"></i>
+          </button>
+        </div>
+
+        <div class="final-settings">
+          <span>Final-X:</span>
+          <input class="final-X-input" type="text" />
+          <span>Final-Y:</span>
+          <input class="final-Y-input" type="text" />
+          <button class="setFinal">
+            <i class="fas fa-check"></i>
+          </button>
+        </div>
+
+        <div class="animation-buttons">
+          <button class = "VerySlowBtn">Very Slow</button>
+          <button class = "SlowBtn">Slow</button>
+          <button class = "MediumBtn">Medium</button>
+          <button class = "FastBtn">Fast</button>
+        </div>
+      </div>
+
+      <div class="main-container"></div>
+    </div>
+    <script src="sketch.js"></script>
+  </body>
+</html>
